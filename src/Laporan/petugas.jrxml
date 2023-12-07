@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" language="groovy" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="0b3e8623-c14c-449c-b14a-13298f631c79">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<queryString language="SQL">
+		<![CDATA[SELECT
+     tabelpetugas.`id` AS tabelpetugas_id,
+     tabelpetugas.`nama` AS tabelpetugas_nama,
+     tabelpetugas.`username` AS tabelpetugas_username,
+     tabelpetugas.`password` AS tabelpetugas_password,
+     tabelpetugas.`alamat` AS tabelpetugas_alamat,
+     tabelpetugas.`nomorhp` AS tabelpetugas_nomorhp
+FROM
+     `tabelpetugas` tabelpetugas]]>
+	</queryString>
+	<field name="tabelpetugas_id" class="java.lang.String"/>
+	<field name="tabelpetugas_nama" class="java.lang.String"/>
+	<field name="tabelpetugas_username" class="java.lang.String"/>
+	<field name="tabelpetugas_password" class="java.lang.String"/>
+	<field name="tabelpetugas_alamat" class="java.lang.String"/>
+	<field name="tabelpetugas_nomorhp" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="99" splitType="Stretch">
+			<staticText>
+				<reportElement uuid="99d78ac4-4cc2-41ff-95b3-11d581b9a56f" x="95" y="14" width="365" height="25"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="18" isBold="true"/>
+				</textElement>
+				<text><![CDATA[KLINIK KECANTIKAN DUTA 2 DEPOK]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="02df9c9d-ef6d-42eb-ad2a-8cbcdee6e614" x="95" y="49" width="365" height="20"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="12" isBold="false"/>
+				</textElement>
+				<text><![CDATA[AAAAAAAAAAAAAAAAAAAAAAAALAMATTTTTTTTTTTTTTTTTTTTTT]]></text>
+			</staticText>
+			<line>
+				<reportElement uuid="755512d5-8aa2-40f5-b391-43c142d89b51" x="-20" y="87" width="595" height="1"/>
+			</line>
+			<image>
+				<reportElement uuid="8f62bffd-c4e9-49cd-bff9-d2f588c486cb" x="10" y="2" width="78" height="86"/>
+				<imageExpression><![CDATA["C:\\Users\\lenov\\Documents\\NetBeansProjects\\stokobat\\src\\gambar2\\newlogoangga.png"]]></imageExpression>
+			</image>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="31" splitType="Stretch">
+			<staticText>
+				<reportElement uuid="58e61575-19d7-43eb-aff2-f8dfed173e1d" x="0" y="0" width="555" height="20"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[DATA PETUGAS KLINIK]]></text>
+			</staticText>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="21" splitType="Stretch">
+			<rectangle>
+				<reportElement uuid="f9e59f0d-1fe9-4673-b946-10d92dafaa60" x="0" y="1" width="92" height="20" backcolor="#FFFFFF"/>
+			</rectangle>
+			<rectangle>
+				<reportElement uuid="f9e59f0d-1fe9-4673-b946-10d92dafaa60" x="92" y="1" width="92" height="20" backcolor="#FFFFFF"/>
+			</rectangle>
+			<rectangle>
+				<reportElement uuid="f9e59f0d-1fe9-4673-b946-10d92dafaa60" x="184" y="1" width="92" height="20" backcolor="#FFFFFF"/>
+			</rectangle>
+			<rectangle>
+				<reportElement uuid="f9e59f0d-1fe9-4673-b946-10d92dafaa60" x="276" y="1" width="92" height="20" backcolor="#FFFFFF"/>
+			</rectangle>
+			<rectangle>
+				<reportElement uuid="f9e59f0d-1fe9-4673-b946-10d92dafaa60" x="368" y="1" width="92" height="20" backcolor="#FFFFFF"/>
+			</rectangle>
+			<rectangle>
+				<reportElement uuid="f9e59f0d-1fe9-4673-b946-10d92dafaa60" x="460" y="1" width="95" height="20" backcolor="#FFFFFF"/>
+			</rectangle>
+			<staticText>
+				<reportElement uuid="4c4cc339-ad1b-4a12-af3c-b5c0a0d6fbc8" x="0" y="0" width="92" height="20"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[ID]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="7738e539-6169-4d89-99cf-701b39cabd5d" x="92" y="0" width="92" height="20"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[NAMA]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="2f13da72-32e9-4ebc-b7cb-92c230ded503" x="184" y="0" width="92" height="20"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[USERNAME]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="c1b5d801-32e8-4881-a7ac-3a740e93cac4" x="276" y="0" width="92" height="20"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[PASSWORD]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="c4d94728-881b-4aa8-b126-df534d297b81" x="368" y="0" width="92" height="20"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[ALAMAT]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="cc2b84cc-2781-409a-b1de-0f986fe38bd1" x="460" y="0" width="92" height="20"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[NOMOR HP]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="20" splitType="Stretch">
+			<rectangle>
+				<reportElement uuid="fa2b008a-d40d-471b-bbce-3e874372ea26" x="0" y="0" width="92" height="20" backcolor="#00CCCC"/>
+			</rectangle>
+			<rectangle>
+				<reportElement uuid="fa2b008a-d40d-471b-bbce-3e874372ea26" x="92" y="0" width="92" height="20" backcolor="#00CCCC"/>
+			</rectangle>
+			<rectangle>
+				<reportElement uuid="fa2b008a-d40d-471b-bbce-3e874372ea26" x="184" y="0" width="92" height="20" backcolor="#00CCCC"/>
+			</rectangle>
+			<rectangle>
+				<reportElement uuid="fa2b008a-d40d-471b-bbce-3e874372ea26" x="276" y="0" width="92" height="20" backcolor="#00CCCC"/>
+			</rectangle>
+			<rectangle>
+				<reportElement uuid="fa2b008a-d40d-471b-bbce-3e874372ea26" x="368" y="0" width="92" height="20" backcolor="#00CCCC"/>
+			</rectangle>
+			<rectangle>
+				<reportElement uuid="fa2b008a-d40d-471b-bbce-3e874372ea26" x="460" y="0" width="95" height="20" backcolor="#00CCCC"/>
+			</rectangle>
+			<textField>
+				<reportElement uuid="1ea7376d-42a1-4a62-a375-ef53368df105" x="10" y="0" width="82" height="20"/>
+				<textElement verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{tabelpetugas_id}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="6e08f9ef-444a-40f0-9d8f-0a57ea04863b" x="104" y="0" width="80" height="20"/>
+				<textElement verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{tabelpetugas_nama}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="258512bc-94a9-45da-959f-b1c70cbfbfcc" x="195" y="0" width="81" height="20"/>
+				<textElement verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{tabelpetugas_username}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="70fcf0e3-e9f3-4861-a719-9b2eaa9d147e" x="286" y="0" width="82" height="20"/>
+				<textElement verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{tabelpetugas_password}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="2025d606-3c57-4625-894c-80354a50fcda" x="471" y="0" width="81" height="20"/>
+				<textElement verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{tabelpetugas_nomorhp}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="90cd1380-bb2a-4451-b43a-5c18275d55aa" x="379" y="0" width="81" height="20"/>
+				<textElement verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{tabelpetugas_alamat}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="144" splitType="Stretch">
+			<staticText>
+				<reportElement uuid="2f9999bd-44e5-4a4f-be1a-e828c5c22a1a" x="412" y="37" width="126" height="20"/>
+				<textElement textAlignment="Center" verticalAlignment="Top">
+					<font fontName="Times New Roman"/>
+				</textElement>
+				<text><![CDATA[Kepala Sekolah]]></text>
+			</staticText>
+			<textField pattern="EEEEE dd MMMMM yyyy">
+				<reportElement uuid="cb04600e-4f25-40ce-bd3f-6bd31925067d" x="444" y="17" width="94" height="20" forecolor="#000000" backcolor="#FFFFFF"/>
+				<textElement>
+					<font fontName="Times New Roman" size="10"/>
+				</textElement>
+				<textFieldExpression><![CDATA[new java.text.SimpleDateFormat("EEEEE dd MMMMM yyyy", new java.util.Locale("id", "ID")).format(new java.util.Date())]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="f65470a8-e867-4333-826b-3080f714838c" x="412" y="17" width="32" height="20"/>
+				<textElement>
+					<font fontName="Times New Roman"/>
+				</textElement>
+				<text><![CDATA[Jakarta, ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="788d8d3b-12c4-401c-85fe-f306e24e6482" x="412" y="108" width="126" height="20"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman"/>
+				</textElement>
+				<text><![CDATA[Dra. Murni Astuti, M.M.]]></text>
+			</staticText>
+		</band>
+	</columnFooter>
+	<pageFooter>
+		<band splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band splitType="Stretch"/>
+	</summary>
+</jasperReport>

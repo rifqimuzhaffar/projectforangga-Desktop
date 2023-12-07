@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" language="groovy" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="11c43709-3a25-4c0f-8cd3-c461861cf62c">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<parameter name="awal" class="java.util.Date">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<parameter name="akhir" class="java.util.Date">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<queryString>
+		<![CDATA[SELECT
+     tabelpembelian.`tgl` AS tabelpembelian_tgl,
+     tabelpembelian.`id` AS tabelpembelian_id,
+     tabelpembelian.`pemasok` AS tabelpembelian_pemasok,
+     tabelpembelian.`nama_obat` AS tabelpembelian_nama_obat,
+     tabelpembelian.`jumlah` AS tabelpembelian_jumlah,
+     tabelpembelian.`harga` AS tabelpembelian_harga,
+     tabelpembelian.`total` AS tabelpembelian_total
+FROM
+     `tabelpembelian` tabelpembelian
+WHERE tabelpembelian.`tgl` BETWEEN $P{awal} AND $P{akhir}]]>
+	</queryString>
+	<field name="tabelpembelian_tgl" class="java.sql.Date"/>
+	<field name="tabelpembelian_id" class="java.lang.String"/>
+	<field name="tabelpembelian_pemasok" class="java.lang.String"/>
+	<field name="tabelpembelian_nama_obat" class="java.lang.String"/>
+	<field name="tabelpembelian_jumlah" class="java.lang.Integer"/>
+	<field name="tabelpembelian_harga" class="java.lang.Integer"/>
+	<field name="tabelpembelian_total" class="java.lang.Integer"/>
+	<variable name="tabelpembelian_total_1" class="java.lang.Integer" calculation="Sum">
+		<variableExpression><![CDATA[$F{tabelpembelian_total}]]></variableExpression>
+	</variable>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="100" splitType="Stretch">
+			<staticText>
+				<reportElement uuid="02df9c9d-ef6d-42eb-ad2a-8cbcdee6e614" x="95" y="49" width="365" height="20"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="12" isBold="false"/>
+				</textElement>
+				<text><![CDATA[AAAAAAAAAAAAAAAAAAAAAAAALAMATTTTTTTTTTTTTTTTTTTTTT]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="99d78ac4-4cc2-41ff-95b3-11d581b9a56f" x="95" y="14" width="365" height="25"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="18" isBold="true"/>
+				</textElement>
+				<text><![CDATA[KLINIK KECANTIKAN DUTA 2 DEPOK]]></text>
+			</staticText>
+			<line>
+				<reportElement uuid="a08b11bd-dae5-42e0-bef6-fa61015bf6a7" x="-21" y="87" width="594" height="1"/>
+			</line>
+			<image>
+				<reportElement uuid="8f62bffd-c4e9-49cd-bff9-d2f588c486cb" x="12" y="2" width="78" height="86"/>
+				<imageExpression><![CDATA["C:\\Users\\lenov\\Documents\\NetBeansProjects\\stokobat\\src\\gambar2\\newlogoangga.png"]]></imageExpression>
+			</image>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="28" splitType="Stretch">
+			<staticText>
+				<reportElement uuid="58e61575-19d7-43eb-aff2-f8dfed173e1d" x="0" y="0" width="555" height="20"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[DATA SEMUA PEMBELIAN]]></text>
+			</staticText>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="21" splitType="Stretch">
+			<rectangle>
+				<reportElement uuid="5bfc55f4-3cee-4c96-8b97-906f39f0bb2c" x="0" y="0" width="79" height="20"/>
+			</rectangle>
+			<rectangle>
+				<reportElement uuid="5bfc55f4-3cee-4c96-8b97-906f39f0bb2c" x="79" y="0" width="79" height="20"/>
+			</rectangle>
+			<rectangle>
+				<reportElement uuid="5bfc55f4-3cee-4c96-8b97-906f39f0bb2c" x="158" y="0" width="79" height="20"/>
+			</rectangle>
+			<rectangle>
+				<reportElement uuid="5bfc55f4-3cee-4c96-8b97-906f39f0bb2c" x="237" y="0" width="79" height="20"/>
+			</rectangle>
+			<rectangle>
+				<reportElement uuid="5bfc55f4-3cee-4c96-8b97-906f39f0bb2c" x="316" y="0" width="79" height="20"/>
+			</rectangle>
+			<rectangle>
+				<reportElement uuid="5bfc55f4-3cee-4c96-8b97-906f39f0bb2c" x="395" y="0" width="79" height="20"/>
+			</rectangle>
+			<rectangle>
+				<reportElement uuid="5bfc55f4-3cee-4c96-8b97-906f39f0bb2c" x="474" y="0" width="81" height="20"/>
+			</rectangle>
+			<staticText>
+				<reportElement uuid="fb468f74-a9a8-4219-b9d4-edc4bb4b2adb" x="0" y="0" width="79" height="20"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Tanggal]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="6845d953-ced0-4efc-a936-c6cc4b65a3df" x="79" y="0" width="79" height="20"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[ID]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="d62496af-c7c0-445c-8f2a-3de18df83bd6" x="158" y="0" width="79" height="20"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Pemasok]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="8f5e7b2b-e611-469d-999b-7785fa556d09" x="237" y="0" width="79" height="20"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Nama Obat]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="84ddc609-778a-4988-becd-f827d9b1bee3" x="316" y="0" width="79" height="20"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Jumlah]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="7a0949ab-dc13-4827-baf6-5c5e2574e7d9" x="395" y="0" width="79" height="20"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Harga Satuan]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="9e6c2d10-6147-4926-bcac-4f87bd3bc561" x="474" y="0" width="81" height="20"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Total]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="21" splitType="Stretch">
+			<rectangle>
+				<reportElement uuid="629e5955-9836-44d2-a069-3a8cdbd97ccc" x="0" y="0" width="79" height="20" backcolor="#00CCCC"/>
+			</rectangle>
+			<rectangle>
+				<reportElement uuid="629e5955-9836-44d2-a069-3a8cdbd97ccc" x="79" y="0" width="79" height="20" backcolor="#00CCCC"/>
+			</rectangle>
+			<rectangle>
+				<reportElement uuid="629e5955-9836-44d2-a069-3a8cdbd97ccc" x="158" y="0" width="79" height="20" backcolor="#00CCCC"/>
+			</rectangle>
+			<rectangle>
+				<reportElement uuid="629e5955-9836-44d2-a069-3a8cdbd97ccc" x="237" y="0" width="79" height="20" backcolor="#00CCCC"/>
+			</rectangle>
+			<rectangle>
+				<reportElement uuid="629e5955-9836-44d2-a069-3a8cdbd97ccc" x="316" y="0" width="79" height="20" backcolor="#00CCCC"/>
+			</rectangle>
+			<rectangle>
+				<reportElement uuid="629e5955-9836-44d2-a069-3a8cdbd97ccc" x="395" y="0" width="79" height="20" backcolor="#00CCCC"/>
+			</rectangle>
+			<rectangle>
+				<reportElement uuid="629e5955-9836-44d2-a069-3a8cdbd97ccc" x="474" y="0" width="81" height="20" backcolor="#00CCCC"/>
+			</rectangle>
+			<textField pattern="dd/MM/yyyy">
+				<reportElement uuid="a3babf8e-2298-4ae2-81fe-74778549c0f1" x="12" y="0" width="67" height="20"/>
+				<textElement verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{tabelpembelian_tgl}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="bb1a30d3-a5fd-435a-b656-20511bde583f" x="92" y="0" width="66" height="20"/>
+				<textElement verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{tabelpembelian_id}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="fdd7f7b2-e66e-42dc-89c8-79df48f6bd67" x="168" y="0" width="69" height="20"/>
+				<textElement verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{tabelpembelian_pemasok}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="cd02b534-0842-48ef-9e92-75e9cd8cf2bf" x="249" y="0" width="67" height="20"/>
+				<textElement verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{tabelpembelian_nama_obat}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="223be1a8-c8d0-4f46-8e3f-8b8901d25e75" x="326" y="0" width="69" height="20"/>
+				<textElement verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{tabelpembelian_jumlah}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="cbba6dba-0e96-4f92-9358-2d61e4fb705c" x="406" y="0" width="68" height="20"/>
+				<textElement verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{tabelpembelian_harga}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="2e08d187-161e-457e-b2bc-df8671d32aba" x="501" y="0" width="54" height="20"/>
+				<textElement verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{tabelpembelian_total}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="134" splitType="Stretch">
+			<staticText>
+				<reportElement uuid="788d8d3b-12c4-401c-85fe-f306e24e6482" x="416" y="103" width="126" height="20"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman"/>
+				</textElement>
+				<text><![CDATA[Dra. Murni Astuti, M.M.]]></text>
+			</staticText>
+			<textField pattern="EEEEE dd MMMMM yyyy">
+				<reportElement uuid="cb04600e-4f25-40ce-bd3f-6bd31925067d" x="448" y="12" width="94" height="20" forecolor="#000000" backcolor="#FFFFFF"/>
+				<textElement>
+					<font fontName="Times New Roman" size="10"/>
+				</textElement>
+				<textFieldExpression><![CDATA[new java.text.SimpleDateFormat("EEEEE dd MMMMM yyyy", new java.util.Locale("id", "ID")).format(new java.util.Date())]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="2f9999bd-44e5-4a4f-be1a-e828c5c22a1a" x="416" y="32" width="126" height="20"/>
+				<textElement textAlignment="Center" verticalAlignment="Top">
+					<font fontName="Times New Roman"/>
+				</textElement>
+				<text><![CDATA[Kepala Sekolah]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="f65470a8-e867-4333-826b-3080f714838c" x="416" y="12" width="32" height="20"/>
+				<textElement>
+					<font fontName="Times New Roman"/>
+				</textElement>
+				<text><![CDATA[Jakarta, ]]></text>
+			</staticText>
+		</band>
+	</columnFooter>
+	<pageFooter>
+		<band splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="21" splitType="Stretch">
+			<rectangle>
+				<reportElement uuid="629e5955-9836-44d2-a069-3a8cdbd97ccc" x="474" y="0" width="81" height="20" backcolor="#00CCCC"/>
+			</rectangle>
+			<textField>
+				<reportElement uuid="e1dcf65f-f7b1-4b10-9b9a-9f38ed09aac5" x="501" y="0" width="54" height="20"/>
+				<textElement verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$V{tabelpembelian_total_1}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="f8defe85-b267-4d77-b689-485ee866f9d5" x="350" y="0" width="124" height="20"/>
+				<textElement verticalAlignment="Middle"/>
+				<text><![CDATA[TOTAL KESELURUHAN =  ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="daac28bb-0b3c-438b-afdd-6f0b4c3aa44f" x="485" y="0" width="16" height="20"/>
+				<textElement verticalAlignment="Middle"/>
+				<text><![CDATA[Rp.]]></text>
+			</staticText>
+		</band>
+	</summary>
+</jasperReport>

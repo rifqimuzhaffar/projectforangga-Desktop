@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" language="groovy" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="02bf8588-db92-4659-b98e-0752de618bf7">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<queryString language="SQL">
+		<![CDATA[SELECT
+     tabelpemasok.`id` AS tabelpemasok_id,
+     tabelpemasok.`nama` AS tabelpemasok_nama,
+     tabelpemasok.`alamat` AS tabelpemasok_alamat,
+     tabelpemasok.`nomorhp` AS tabelpemasok_nomorhp
+FROM
+     `tabelpemasok` tabelpemasok]]>
+	</queryString>
+	<field name="tabelpemasok_id" class="java.lang.String"/>
+	<field name="tabelpemasok_nama" class="java.lang.String"/>
+	<field name="tabelpemasok_alamat" class="java.lang.String"/>
+	<field name="tabelpemasok_nomorhp" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="98" splitType="Stretch">
+			<line>
+				<reportElement uuid="a08b11bd-dae5-42e0-bef6-fa61015bf6a7" x="-19" y="86" width="594" height="1"/>
+			</line>
+			<staticText>
+				<reportElement uuid="02df9c9d-ef6d-42eb-ad2a-8cbcdee6e614" x="97" y="51" width="365" height="20"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="12" isBold="false"/>
+				</textElement>
+				<text><![CDATA[AAAAAAAAAAAAAAAAAAAAAAAALAMATTTTTTTTTTTTTTTTTTTTTT]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="99d78ac4-4cc2-41ff-95b3-11d581b9a56f" x="97" y="16" width="365" height="25"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="18" isBold="true"/>
+				</textElement>
+				<text><![CDATA[KLINIK KECANTIKAN DUTA 2 DEPOK]]></text>
+			</staticText>
+			<image>
+				<reportElement uuid="8f62bffd-c4e9-49cd-bff9-d2f588c486cb" x="12" y="1" width="78" height="86"/>
+				<imageExpression><![CDATA["C:\\Users\\lenov\\Documents\\NetBeansProjects\\stokobat\\src\\gambar2\\newlogoangga.png"]]></imageExpression>
+			</image>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="28" splitType="Stretch">
+			<staticText>
+				<reportElement uuid="58e61575-19d7-43eb-aff2-f8dfed173e1d" x="0" y="0" width="555" height="20"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[DATA PEMASOK]]></text>
+			</staticText>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="21" splitType="Stretch">
+			<rectangle>
+				<reportElement uuid="c1345629-0b19-4525-bb8b-2c8ae02c9740" x="0" y="0" width="138" height="20"/>
+			</rectangle>
+			<rectangle>
+				<reportElement uuid="c1345629-0b19-4525-bb8b-2c8ae02c9740" x="138" y="0" width="138" height="20"/>
+			</rectangle>
+			<rectangle>
+				<reportElement uuid="c1345629-0b19-4525-bb8b-2c8ae02c9740" x="276" y="0" width="138" height="20"/>
+			</rectangle>
+			<rectangle>
+				<reportElement uuid="c1345629-0b19-4525-bb8b-2c8ae02c9740" x="414" y="0" width="141" height="20"/>
+			</rectangle>
+			<staticText>
+				<reportElement uuid="6fac3cfe-9927-4682-ab4b-e896cec9645c" x="0" y="0" width="138" height="20"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[ID PEMASOK]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="d03377e7-8967-4c77-8ca3-9683bedd31fc" x="138" y="0" width="138" height="20"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[NAMA ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="f9fccc4c-0bfb-4481-910b-3b4036b884cc" x="276" y="0" width="138" height="20"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[ALAMAT]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="844e57ff-f872-4524-85de-35a452502295" x="414" y="0" width="141" height="20"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[NO TELEPON]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="20" splitType="Stretch">
+			<rectangle>
+				<reportElement uuid="e131aa22-c780-4437-ad3d-d9b3d452905d" x="0" y="0" width="138" height="20" backcolor="#00CCCC"/>
+			</rectangle>
+			<rectangle>
+				<reportElement uuid="e131aa22-c780-4437-ad3d-d9b3d452905d" x="138" y="0" width="138" height="20" backcolor="#00CCCC"/>
+			</rectangle>
+			<rectangle>
+				<reportElement uuid="e131aa22-c780-4437-ad3d-d9b3d452905d" x="276" y="0" width="138" height="20" backcolor="#00CCCC"/>
+			</rectangle>
+			<rectangle>
+				<reportElement uuid="e131aa22-c780-4437-ad3d-d9b3d452905d" x="414" y="0" width="141" height="20" backcolor="#00CCCC"/>
+			</rectangle>
+			<textField>
+				<reportElement uuid="44a6868b-667d-4daf-bb2d-ed243dfc1e48" x="12" y="0" width="126" height="20"/>
+				<textElement verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{tabelpemasok_id}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="838726e4-5fb7-4487-afa6-2214e6684768" x="151" y="0" width="125" height="20"/>
+				<textElement verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{tabelpemasok_nama}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="1dd466a5-0b20-4d0a-b3e1-2006e5d58d1c" x="289" y="0" width="125" height="20"/>
+				<textElement verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{tabelpemasok_alamat}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="a5c676d0-c6eb-4ed8-bc23-f788f2552888" x="424" y="0" width="131" height="20"/>
+				<textElement verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{tabelpemasok_nomorhp}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="134" splitType="Stretch">
+			<staticText>
+				<reportElement uuid="788d8d3b-12c4-401c-85fe-f306e24e6482" x="407" y="104" width="126" height="20"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman"/>
+				</textElement>
+				<text><![CDATA[Dra. Murni Astuti, M.M.]]></text>
+			</staticText>
+			<textField pattern="EEEEE dd MMMMM yyyy">
+				<reportElement uuid="cb04600e-4f25-40ce-bd3f-6bd31925067d" x="439" y="13" width="94" height="20" forecolor="#000000" backcolor="#FFFFFF"/>
+				<textElement>
+					<font fontName="Times New Roman" size="10"/>
+				</textElement>
+				<textFieldExpression><![CDATA[new java.text.SimpleDateFormat("EEEEE dd MMMMM yyyy", new java.util.Locale("id", "ID")).format(new java.util.Date())]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="2f9999bd-44e5-4a4f-be1a-e828c5c22a1a" x="407" y="33" width="126" height="20"/>
+				<textElement textAlignment="Center" verticalAlignment="Top">
+					<font fontName="Times New Roman"/>
+				</textElement>
+				<text><![CDATA[Kepala Sekolah]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="f65470a8-e867-4333-826b-3080f714838c" x="407" y="13" width="32" height="20"/>
+				<textElement>
+					<font fontName="Times New Roman"/>
+				</textElement>
+				<text><![CDATA[Jakarta, ]]></text>
+			</staticText>
+		</band>
+	</columnFooter>
+	<pageFooter>
+		<band splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band splitType="Stretch"/>
+	</summary>
+</jasperReport>

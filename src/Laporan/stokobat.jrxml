@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" language="groovy" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="5d34bf7f-1404-40d6-84bb-97c81a3a2d6f">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<queryString language="SQL">
+		<![CDATA[SELECT
+     tabelobat.`id` AS tabelobat_id,
+     tabelobat.`nama` AS tabelobat_nama,
+     tabelobat.`stok` AS tabelobat_stok,
+     tabelobat.`harga` AS tabelobat_harga
+FROM
+     `tabelobat` tabelobat]]>
+	</queryString>
+	<field name="tabelobat_id" class="java.lang.String"/>
+	<field name="tabelobat_nama" class="java.lang.String"/>
+	<field name="tabelobat_stok" class="java.lang.Integer"/>
+	<field name="tabelobat_harga" class="java.lang.Integer"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="97" splitType="Stretch">
+			<staticText>
+				<reportElement uuid="02df9c9d-ef6d-42eb-ad2a-8cbcdee6e614" x="93" y="48" width="365" height="20"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="12" isBold="false"/>
+				</textElement>
+				<text><![CDATA[AAAAAAAAAAAAAAAAAAAAAAAALAMATTTTTTTTTTTTTTTTTTTTTT]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="99d78ac4-4cc2-41ff-95b3-11d581b9a56f" x="93" y="13" width="365" height="25"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="18" isBold="true"/>
+				</textElement>
+				<text><![CDATA[KLINIK KECANTIKAN DUTA 2 DEPOK]]></text>
+			</staticText>
+			<line>
+				<reportElement uuid="b49481f8-e827-428d-bbdd-aa4f0f09142e" x="-19" y="86" width="594" height="1"/>
+			</line>
+			<image>
+				<reportElement uuid="8f62bffd-c4e9-49cd-bff9-d2f588c486cb" x="13" y="0" width="78" height="86"/>
+				<imageExpression><![CDATA["C:\\Users\\lenov\\Documents\\NetBeansProjects\\stokobat\\src\\gambar2\\newlogoangga.png"]]></imageExpression>
+			</image>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="26" splitType="Stretch">
+			<staticText>
+				<reportElement uuid="58e61575-19d7-43eb-aff2-f8dfed173e1d" x="3" y="0" width="552" height="20"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[DATA STOK OBAT]]></text>
+			</staticText>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="20" splitType="Stretch">
+			<rectangle>
+				<reportElement uuid="29c115e5-e79f-484e-a8be-f1c50be1ea09" x="0" y="0" width="138" height="20"/>
+			</rectangle>
+			<rectangle>
+				<reportElement uuid="29c115e5-e79f-484e-a8be-f1c50be1ea09" x="138" y="0" width="138" height="20"/>
+			</rectangle>
+			<rectangle>
+				<reportElement uuid="29c115e5-e79f-484e-a8be-f1c50be1ea09" x="276" y="0" width="138" height="20"/>
+			</rectangle>
+			<rectangle>
+				<reportElement uuid="29c115e5-e79f-484e-a8be-f1c50be1ea09" x="414" y="0" width="141" height="20"/>
+			</rectangle>
+			<staticText>
+				<reportElement uuid="513610f9-d3ad-4f5d-8a09-f1e18ae9ac0a" x="0" y="0" width="138" height="20"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[ID]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="bb006722-97bb-4281-81cb-29c020d344a9" x="138" y="0" width="138" height="20"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[NAMA OBAT]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="309d7651-59f6-4df0-8a8a-bfddc010bcb6" x="276" y="0" width="138" height="20"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[STOK]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="b3b4c2cc-9014-4c5d-95f7-3e5686b80e51" x="414" y="0" width="141" height="20"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[HARGA SATUAN]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="20" splitType="Stretch">
+			<rectangle>
+				<reportElement uuid="29c115e5-e79f-484e-a8be-f1c50be1ea09" x="0" y="0" width="138" height="20" backcolor="#00CCCC"/>
+			</rectangle>
+			<rectangle>
+				<reportElement uuid="29c115e5-e79f-484e-a8be-f1c50be1ea09" x="138" y="0" width="138" height="20" backcolor="#00CCCC"/>
+			</rectangle>
+			<rectangle>
+				<reportElement uuid="29c115e5-e79f-484e-a8be-f1c50be1ea09" x="276" y="0" width="138" height="20" backcolor="#00CCCC"/>
+			</rectangle>
+			<rectangle>
+				<reportElement uuid="29c115e5-e79f-484e-a8be-f1c50be1ea09" x="414" y="0" width="141" height="20" backcolor="#00CCCC"/>
+			</rectangle>
+			<textField>
+				<reportElement uuid="e7427248-5218-4cd4-bfd6-5343b3bdfcd0" x="13" y="0" width="125" height="20"/>
+				<textElement verticalAlignment="Middle">
+					<font isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{tabelobat_id}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="3d36d656-c5bb-4172-a2e8-38082b93a10d" x="151" y="0" width="125" height="20"/>
+				<textElement verticalAlignment="Middle">
+					<font isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{tabelobat_nama}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="d30501e6-1f20-45af-9414-ddb6103c3a9e" x="289" y="0" width="30" height="20"/>
+				<textElement verticalAlignment="Middle">
+					<font isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{tabelobat_stok}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="3a0efe41-f3de-4c13-a4bb-58bd3a52d63b" x="428" y="0" width="127" height="20"/>
+				<textElement verticalAlignment="Middle">
+					<font isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{tabelobat_harga}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="fc47c71b-ae65-46ae-8b44-fde6177b322f" x="319" y="0" width="85" height="20"/>
+				<textElement verticalAlignment="Middle"/>
+				<text><![CDATA[Buah]]></text>
+			</staticText>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="141" splitType="Stretch">
+			<staticText>
+				<reportElement uuid="2f9999bd-44e5-4a4f-be1a-e828c5c22a1a" x="416" y="36" width="126" height="20"/>
+				<textElement textAlignment="Center" verticalAlignment="Top">
+					<font fontName="Times New Roman"/>
+				</textElement>
+				<text><![CDATA[Kepala Sekolah]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="f65470a8-e867-4333-826b-3080f714838c" x="416" y="16" width="32" height="20"/>
+				<textElement>
+					<font fontName="Times New Roman"/>
+				</textElement>
+				<text><![CDATA[Jakarta, ]]></text>
+			</staticText>
+			<textField pattern="EEEEE dd MMMMM yyyy">
+				<reportElement uuid="cb04600e-4f25-40ce-bd3f-6bd31925067d" x="448" y="16" width="94" height="20" forecolor="#000000" backcolor="#FFFFFF"/>
+				<textElement>
+					<font fontName="Times New Roman" size="10"/>
+				</textElement>
+				<textFieldExpression><![CDATA[new java.text.SimpleDateFormat("EEEEE dd MMMMM yyyy", new java.util.Locale("id", "ID")).format(new java.util.Date())]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="788d8d3b-12c4-401c-85fe-f306e24e6482" x="416" y="107" width="126" height="20"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman"/>
+				</textElement>
+				<text><![CDATA[Dra. Murni Astuti, M.M.]]></text>
+			</staticText>
+		</band>
+	</columnFooter>
+	<pageFooter>
+		<band splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band splitType="Stretch"/>
+	</summary>
+</jasperReport>
